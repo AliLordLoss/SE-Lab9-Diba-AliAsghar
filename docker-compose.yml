@@ -1,0 +1,34 @@
+version: "3.3"
+networks:
+   lab9:
+     external: false
+
+services:
+  front:
+    image: front
+    container_name: front
+    restart: always
+    ports:
+      - 8080:80
+    networks:
+      - lab9
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - 80:80
+    networks:
+      - lab9
+  time:
+    image: time-api
+    container_name: time-api
+    restart: always
+    networks:
+      - lab9
+  random:
+    image: random-api
+    container_name: random-api
+    restart: always
+    networks:
+      - lab9
