@@ -1,0 +1,6 @@
+.random-container {
+  width: 100%;
+  height: 100%;
+  border-left: solid 1px black;
+  padding: 24px;
+}
