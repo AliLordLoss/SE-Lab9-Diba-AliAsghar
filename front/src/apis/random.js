@@ -1,7 +1,7 @@
-import { RandomApi } from "./base";
+import AxiosInstance from "./base";
 
 export const getRandom = (min, max) => {
-  return RandomApi.get("/range", {
+  return AxiosInstance.get("/random/range", {
     params: {
       min,
       max,

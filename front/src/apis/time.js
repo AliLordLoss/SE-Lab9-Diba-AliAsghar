@@ -1,37 +1,37 @@
-import { TimeApi } from "./base";
+import AxiosInstance from "./base";
 
 export const getISO = () => {
-  return TimeApi.get("/iso");
+  return AxiosInstance.get("/time/iso");
 };
 
 export const getDate = () => {
-  return TimeApi.get("/");
+  return AxiosInstance.get("/time/");
 };
 
 export const getTimestamp = () => {
-  return TimeApi.get("/timestamp");
+  return AxiosInstance.get("/time/timestamp");
 };
 
 export const getYear = () => {
-  return TimeApi.get("/year");
+  return AxiosInstance.get("/time/year");
 };
 
 export const getMonth = () => {
-  return TimeApi.get("/month");
+  return AxiosInstance.get("/time/month");
 };
 
 export const getDay = () => {
-  return TimeApi.get("/day");
+  return AxiosInstance.get("/time/day");
 };
 
 export const getHour = () => {
-  return TimeApi.get("/hour");
+  return AxiosInstance.get("/time/hour");
 };
 
 export const getSecond = () => {
-  return TimeApi.get("/second");
+  return AxiosInstance.get("/time/second");
 };
 
 export const getMiliSecond = () => {
-  return TimeApi.get("/mili-second");
+  return AxiosInstance.get("/time/mili-second");
 };
